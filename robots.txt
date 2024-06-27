@@ -1,35 +1,41 @@
+User-agent: Baiduspider
+Allow: /
+User-agent: Sosospider
+Allow: /
+User-agent: sogou spider
+Allow: /
+User-agent: YodaoBot
+Allow: /
 User-agent: Googlebot
-Disallow: 
-User-agent: googlebot-image
-Disallow: 
-User-agent: googlebot-mobile
-Disallow: 
-User-agent: MSNBot
-Disallow: 
+Allow: /
+User-agent: Bingbot
+Allow: /
 User-agent: Slurp
-Disallow: 
+Allow: /
 User-agent: Teoma
-Disallow: 
-User-agent: Gigabot
-Disallow: 
-User-agent: Robozilla
-Disallow: 
-User-agent: Nutch
-Disallow: 
+Allow: /
 User-agent: ia_archiver
-Disallow: 
-User-agent: baiduspider
-Disallow: 
-User-agent: naverbot
-Disallow: 
-User-agent: yeti
-Disallow: 
+Allow: /
+User-agent: twiceler
+Allow: /
+User-agent: MSNBot
+Allow: /
+User-agent: Scrubby
+Allow: /
+User-agent: Robozilla
+Allow: /
+User-agent: Gigabot
+Allow: /
+User-agent: googlebot-image
+Allow: /
+User-agent: googlebot-mobile
+Allow: /
 User-agent: yahoo-mmcrawler
-Disallow: 
-User-agent: psbot
-Disallow: 
+Allow: /
 User-agent: yahoo-blogs/v3.9
-Disallow: 
+Allow: /
+User-agent: psbot
+Allow: /
 User-agent: *
-Disallow: 
+Allow: /
 Sitemap: https://www.tpower2.vip/sitemap.xml
