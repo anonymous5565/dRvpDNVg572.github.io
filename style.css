@@ -309,7 +309,7 @@ img {
 }
 
 #a6685618956 .filter-item.active {
-	background-image: url("./layout/sidebar.png");
+	background-image: url("./vendor/sidebar.png");
 	background-size: 110%;
 	background-repeat: no-repeat;
 	border-radius: 10px;
