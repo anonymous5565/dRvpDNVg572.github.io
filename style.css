@@ -5,14 +5,18 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
+
 .login-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background-color: #ce0606;
   color: white;
   width: 50px;
   height: 30px;
   border: none;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 12px;
   border-radius: 5px;
 }
 
@@ -21,6 +25,9 @@
 }
 
 .lang-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background-color: #f0f0f0;
   color: #333;
   border: 1px solid #ccc;
@@ -46,6 +53,7 @@
 a {
   text-decoration: none;
 }
+
 body #a6685618956 {
 	font-size: 14px;
 	font-family: sans-serif;
@@ -301,7 +309,7 @@ img {
 }
 
 #a6685618956 .filter-item.active {
-	background-image: url("./vendor/sidebar.png");
+	background-image: url("./layout/sidebar.webp");
 	background-size: 110%;
 	background-repeat: no-repeat;
 	border-radius: 10px;
@@ -525,7 +533,7 @@ body {
 h1,
 h2 {
 	display: block;
-	font-size: 18px;
+        font-size: 18px;
 }
 
 a {
