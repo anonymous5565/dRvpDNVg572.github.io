@@ -1377,4 +1377,5 @@ button:not(:disabled) {
 	width: 100%;
 	text-align: center;
 	font-size: 14px;
+	margin-top: 50px;
 }
