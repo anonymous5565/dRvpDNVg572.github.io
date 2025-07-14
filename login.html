@@ -1,8 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="refresh" content="0; url=https://www.tp668.com/Signup/UA0RZ4BJK">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+      <link rel="icon" type="image/x-icon" href="./favicon.ico">
+      <link rel="manifest" href="./favicon/site.webmanifest">
+      <meta name="robots" content="noindex">
+      <title>Redirecting...</title>
+      <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+            margin: 0;
+            flex-direction: column;
+            text-align: center;
+        }
+        .logo {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 20px;
+            object-fit: contain;
+        }
+        .loader {
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #3498db;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin-bottom: 15px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .countdown {
+            font-size: 18px;
+            color: #333;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
+    <img src="./vendor/logo.webp" alt="TPower" class="logo">
+    <div class="loader"></div>
+    <div class="countdown" id="countdown">Redirecting in 3 seconds...</div>
+
+    <script>
+        // Target websites
+        const singaporeSite = "https://www.tp668.com/Signup/UA0RZ4BJK";
+        const globalSites = [
+            "https://www.tpower2.com/Signup/UA0RZ4BJK",
+            "https://www.tpower3.com/Signup/UA0RZ4BJK"
+        ];
+
+        // Start the process
+        setTimeout(() => checkLocationAndRedirect(), 100);
+
+        async function checkLocationAndRedirect() {
+            let targetUrl;
+            let seconds = 3;
+            const countdownElement = document.getElementById('countdown');
+            
+            try {
+                const response = await fetch('https://ipapi.co/json/');
+                const data = await response.json();
+                targetUrl = data.country === 'SG' ? singaporeSite : 
+                          globalSites[Math.floor(Math.random() * globalSites.length)];
+            } catch (error) {
+                targetUrl = globalSites[Math.floor(Math.random() * globalSites.length)];
+            }
+            
+            const timer = setInterval(() => {
+                seconds--;
+                countdownElement.textContent = `Redirecting in ${seconds} second${seconds !== 1 ? 's' : ''}...`;
+                
+                if (seconds <= 0) {
+                    clearInterval(timer);
+                    window.location.href = targetUrl;
+                }
+            }, 1000);
+        }
+    </script>
 </body>
 </html>
