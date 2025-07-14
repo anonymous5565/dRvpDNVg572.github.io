@@ -1,10 +1,100 @@
-/*!
- * Bootstrap v3.3.7 (http://getbootstrap.com)
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+line-height: 1.6;
+color: #333;
+margin: 0 auto;
+padding: 10px;
+}
 
+header {
+background-color: #f8f9fa;
+padding: 30px;
+border-radius: 8px;
+margin-bottom: 30px;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+h1 {
+color: #2c3e50;
+font-size: 1.25em;
+margin-bottom: 15px;
+}
+
+h2 {
+color: #2980b9;
+font-size: 1.25em;
+border-bottom: 2px solid #eee;
+padding-bottom: 10px;
+margin-top: 40px;
+}
+
+h3 {
+color: #16a085;
+margin-top: 25px;
+}
+.game-category {
+background-color: #f9f9f9;
+border-radius: 8px;
+margin-bottom: 20px;
+}
+
+ul {
+padding-left: 20px;
+}
+
+li {
+margin-bottom: 8px;
+}
+
+.highlight {
+font-weight: bold;
+color: #ce0606;
+}
+
+.badge {
+background-color: #ce0606;
+color: white;
+padding: 3px 8px;
+border-radius: 4px;
+font-size: 0.8em;
+margin-left: 10px;
+}
+
+.trust-badges {
+margin: 30px 0;
+text-align: center;
+}
+
+.trust-badges img {
+height: 60px;
+margin: 0 15px;
+}
+
+.cta-button {
+display: inline-block;
+background-color: #ce0606;
+color: white;
+padding: 12px 24px;
+border-radius: 4px;
+text-decoration: none;
+font-weight: bold;
+margin: 20px 0;
+text-decoration: none;
+user-select: none;
+}
+
+.access-tip {
+background-color: #fff3cd;
+padding: 12px;
+border-radius: 4px;
+margin: 20px 0;
+border-left: 4px solid #ffc107;
+}
+
+.center-content {
+text-align: center;
+}
 
 .login-button {
   display: inline-flex;
@@ -61,10 +151,6 @@ body #a6685618956 {
 }
 
 picture {
-	display: block;
-}
-
-p {
 	display: block;
 }
 
@@ -455,11 +541,6 @@ img {
 	color: #e8bd70;
 }
 
-@font-face {
-	font-family: Microsoft YaHei;
-	src: url(/static/fonts/msyh.12916d9.ttf) format("truetype");
-	font-weight: 400;
-}
 
 #C12.C1211 ul li[data-v-530b4454]::marker {
 	color: #47d1ff;
@@ -492,11 +573,7 @@ img {
 	--breakpoint-md: 768px;
 	--breakpoint-lg: 992px;
 	--breakpoint-xl: 1200px;
-	--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
-		Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
-		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-	--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-		"Liberation Mono", "Courier New", monospace;
+	--font-family-sans-serif: -apple-system, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 *,
@@ -515,9 +592,7 @@ html {
 
 body {
 	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-		Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif,
-		Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+	font-family: -apple-system, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.5;
@@ -528,12 +603,6 @@ body {
 
 [tabindex="-1"]:focus:not(:focus-visible) {
 	outline: 0 !important;
-}
-
-h1,
-h2 {
-	display: block;
-        font-size: 18px;
 }
 
 a {
