@@ -1,47 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>404 Not Found</title>
-      <style>
-         h1, h2  {
-         text-align: center;
-         }
-      </style>
-   </head>
-   <body>
-      <h1>404</h1>
-      <h2>Oops! Page Not Be Found</h2>
-      <center><span id="totalSecond">3</span> seconds redirects to Homepage</center>
-   </body>
-   <script language="javascript" type="text/javascript">
-      <!--
-          var second = document.getElementById('totalSecond').textContent;
-          if (navigator.appName.indexOf("Explorer") > -1)  //
-          {
-              second = document.getElementById('totalSecond').innerText;
-          } else
-          {
-              second = document.getElementById('totalSecond').textContent;
-          }
-          setInterval("redirect()", 1000);  // redirect()
-          function redirect()
-          {
-              if (second < 0)
-              {
-                  location.href = 'https://www.tpower2.vip/';
-              } else
-              {
-                  if (navigator.appName.indexOf("Explorer") > -1)
-                  {
-                      document.getElementById('totalSecond').innerText = second--;
-                  } else
-                  {
-                      document.getElementById('totalSecond').textContent = second--;
-                  }
-              }
-          }
-      -->
-   </script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Page Not Found</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            padding: 2rem;
+        }
+        h1 {
+            font-size: 5rem;
+            margin: 0;
+            color: #6c757d;
+        }
+        h2 {
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+        }
+        p {
+            margin-bottom: 0;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        .emoji {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        #countdown {
+            font-weight: bold;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="emoji">😕</div>
+        <h1>404</h1>
+        <h2>Page Not Found</h2>
+        <p>Sorry, the page you requested doesn't exist.</p>
+        <p>Redirecting in <span id="countdown">3</span> seconds...</p>
+    </div>
+
+    <script>
+        // Countdown and redirect
+        let seconds = 3;
+        const countdownElement = document.getElementById('countdown');
+        
+        const countdown = setInterval(() => {
+            seconds--;
+            countdownElement.textContent = seconds;
+            
+            if (seconds <= 0) {
+                clearInterval(countdown);
+                window.location.href = "https://www.tpower2.vip/";
+            }
+        }, 1000);
+    </script>
+</body>
 </html>
