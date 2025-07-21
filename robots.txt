@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /login.html
+Disallow: /login
 
 Sitemap: https://www.tpower2.vip/sitemap.xml
