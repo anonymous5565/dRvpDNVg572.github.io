@@ -37,7 +37,7 @@ margin-top: 40px;
 }
 
 h3 {
-color: #16a085;
+color: #ce0606;
 margin-top: 25px;
 }
 .game-category {
@@ -92,11 +92,11 @@ user-select: none;
 }
 
 .access-tip {
-background-color: #fff3cd;
+background-color: #fed5d5;
 padding: 12px;
 border-radius: 4px;
 margin: 20px 0;
-border-left: 4px solid #ffc107;
+border-left: 4px solid #ce0606;
 }
 
 .center-content {
