@@ -2,21 +2,18 @@
 <urlset
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
-  <url>
+<url>
     <loc>https://www.tpower2.vip/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tpower2.vip/"/>
     <xhtml:link rel="alternate" hreflang="zh" href="https://www.tpower2.vip/zh"/>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-  </url>
-
-  <url>
+</url>
+<url>
     <loc>https://www.tpower2.vip/zh</loc>
     <xhtml:link rel="alternate" hreflang="zh" href="https://www.tpower2.vip/zh"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.tpower2.vip/"/>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
-
 </urlset>
